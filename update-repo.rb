@@ -111,7 +111,6 @@ end
 
 rsync_cmd="rsync #{rsync_opts} #{actual_source} #{actual_dest}"
 logger.info("Executing rsync as:\n\t#{rsync_cmd}")
-exit
 system(rsync_cmd)
 
 # Now we just have to clean up our "latest" symlink and we're done.
